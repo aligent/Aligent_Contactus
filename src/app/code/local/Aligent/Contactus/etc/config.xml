@@ -1,15 +1,57 @@
 <?xml version="1.0"?>
+<!--
+/**
+ * @category    Aligent
+ * @package     Aligent_Contactus
+ * @copyright   Copyright (c) 2011 Aligent Consulting. (http://www.aligent.com.au)
+ * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ *
+ * @author 		Luke Mills <luke@aligent.com.au>
+ */
+-->
 <config>
     <modules>
         <Aligent_Contactus>
-            <version>1.0.0</version>
+            <version>0.0.0</version>
         </Aligent_Contactus>
     </modules>
+    <frontend>
+        <layout>
+            <updates>
+                <aligent_contactus>
+                    <file>aligent/contactus.xml</file>
+                </aligent_contactus>
+            </updates>
+        </layout>
+    </frontend>
     <global>
+        <models>
+            <aligent_contactus>
+                <class>Aligent_Contactus_Model</class>
+            </aligent_contactus>
+        </models>
         <blocks>
             <aligent_contactus>
                 <class>Aligent_Contactus_Block</class>
             </aligent_contactus>
         </blocks>
+        <events>
+            <controller_action_predispatch_contacts_index_post>
+                <observers>
+                    <aligent_contactus_mungefields>
+                        <type>singleton</type>
+                        <class>aligent_contactus/observer</class>
+                        <method>indexPostPredispatch</method>
+                    </aligent_contactus_mungefields>
+                </observers>
+            </controller_action_predispatch_contacts_index_post>
+        </events>
+        <resources>
+            <aligent_contactus_setup>
+                <setup>
+                    <module>Aligent_Contactus</module>
+                </setup>
+            </aligent_contactus_setup>
+        </resources>
     </global>
 </config>

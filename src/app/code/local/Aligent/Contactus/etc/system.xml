@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * @category    Aligent
+ * @package     Aligent_Contactus
+ * @copyright   Copyright (c) 2011 Aligent Consulting. (http://www.aligent.com.au)
+ * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ *
+ * @author 		Luke Mills <luke@aligent.com.au>
+ */
+-->
+<config>
+    <sections>
+        <contacts>
+            <groups>
+                <contacts>
+                    <fields>
+                        <reasons>
+                            <label>Contact Us Reasons</label>
+                            <frontend_type>text</frontend_type>
+                            <comment>Enter multiple reasons, each separated by the '|' (pipe) character.</comment>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </reasons>
+                    </fields>
+                </contacts>
+            </groups>
+        </contacts>
+    </sections>
+</config>

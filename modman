@@ -1,2 +1,4 @@
 src/app/code/local/Aligent/Contactus     app/code/local/Aligent/Contactus
 src/app/etc/modules/*    app/etc/modules/
+src/app/design/frontend/base/default/layout/aligent/contactus.xml	app/design/frontend/base/default/layout/aligent/contactus.xml
+src/app/design/frontend/base/default/template/aligent/contactus	app/design/frontend/base/default/template/aligent/contactus
