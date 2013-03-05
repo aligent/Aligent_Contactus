@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Aligent_Contactus>
+            <version>1.0.0</version>
+        </Aligent_Contactus>
+    </modules>
+    <global>
+        <blocks>
+            <aligent_contactus>
+                <class>Aligent_Contactus_Block</class>
+            </aligent_contactus>
+        </blocks>
+    </global>
+</config>

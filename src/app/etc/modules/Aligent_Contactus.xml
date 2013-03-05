@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Aligent_Contactus>
+            <active>true</active>
+            <codePool>local</codePool>
+            <depends></depends>
+        </Aligent_Contactus>
+    </modules>
+</config>
